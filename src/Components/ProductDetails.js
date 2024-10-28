@@ -4,7 +4,7 @@ import { useLocation, useOutletContext, useParams } from "react-router-dom";
 export default function ProductDetails() {
   const { id } = useParams(); // to take parameter in component from URL
   // const pobj=useOutletContext();// help get data from context
-  const pobj = useLocation(); // state is fetched using uselocation()
+  const pobj = useLocation(); // state is fetched using uselocation() and <Outlet/> is also required for this 
   return (
     <div className="prodDetailContainer">
       <div className="imgContainer">
